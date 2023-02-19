@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">   
+    <title>Mocaverse Art Station</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="icon" type="image/x-icon" href="logofav.png">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="logo.png" class="logo"></a>
+            <div class="toggle" onclick="toggleMenu()"></div>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="https://twitter.com/MocaverseNFT">Twitter</a></li>
+                <li><a href="http://discord.gg/MocaverseNFT">Discord</a></li>
+                <li><a href="https://www.instagram.com/animocabrands/">Instagram</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Mocaverse Art Station</h2>
+                <p>Here I collected the latest arts devoted to Mocaverse Project. If you are interested to see your art here, feel free to ask me in Discord: 0xDale#1156 Made by 0xDale</p>
+                <a href="https://www.mocaverse.xyz/">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="1.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="2.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="3.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="4.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="5.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="6.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="7.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="8.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="9.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="10.png" />
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+
+            </div>
+            
+        </div>
+        <ul class="sci">
+            <li><a href="https://twitter.com/stayal9ve2kk"><img src="twitter.png"></a></li>
+            <li><a href="https://www.instagram.com/0xdale/"><img src="instagram.png"></a></li>
+        </ul>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          loop: true,
+        });
+
+
+
+        function toggleMenu(){
+            const menuToggle = document.querySelector(".toggle");
+            const navigation = document.querySelector(".navigation");
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+      </script>
+    
+</body>
+</html>
